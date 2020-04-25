@@ -13,16 +13,17 @@ npm install --save custom-sweet-alert
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'custom-sweet-alert'
+import { CustomSweetAlert } from 'custom-sweet-alert';
 import 'custom-sweet-alert/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+ <CustomSweetAlert
+    isOpen={true}
+    type={"confirm" || "success" || "fail"} 
+    title="Sure ?"
+    infoText="Are you sure to remove this card ?"
+    onActionHandle={() => this.onActionHandle()}
+  />
+
 ```
 
 ## License
